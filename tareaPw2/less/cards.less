@@ -1,0 +1,36 @@
+.cards-container {
+    .flex1();
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: @secundary-text-color;
+    border-radius: 12px;
+    box-shadow: @shadow;
+    max-width: 300px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    img {
+        .img-100();
+    }
+
+    h2 {
+        margin: 1rem 0 0.5rem;
+        font-size: 1.25rem;
+        color: @hover-color;
+    }
+
+    p {
+        padding: 0 1rem 1rem;
+        color: @primary-text-color;
+    }
+}
